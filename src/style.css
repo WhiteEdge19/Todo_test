@@ -1,0 +1,158 @@
+body{
+    margin: 0;
+    
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+    min-height: 100vh;
+}
+
+.add-tarea{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.frecuencia{
+    grid-area: 1/1/2/2;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr;
+    grid-template-rows: repeat(4,1fr);
+    gap: 3px;
+}
+
+.frecuencia input[type="button"]{
+    grid-area: 4/3/5/5;
+}
+
+
+
+.menu{
+
+    background-color: dodgerblue;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    gap: 5px;
+
+}
+
+.activar-tarea{
+    border: none;
+    background-color: dodgerblue;
+    width: 100%;
+    box-shadow: 1px 1px 4px black;
+    margin:10px 0;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+#nombre,#descripcion{
+    width: 80%;
+    border-radius: 5px;
+    border: none;
+}
+
+.add-tarea input[value="Completar"]{
+    width: 60%;
+    align-self:center;
+    border: none;
+    padding: 8px 0;
+    background-color: dodgerblue;
+    box-shadow: 1px 2px 5px black;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+}
+
+.form-add{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+    
+}
+
+.add-tarea{
+    padding:5px 0 ;
+    
+}
+
+#cat{
+    width: 80%;
+}
+
+.espacio-cat{
+    box-shadow: 1px 1px 8px black;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-categoria{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    gap: 5px;
+}
+
+.add-categoria input[type="submit"]{
+    border: none;
+    background-color: dodgerblue;
+    box-shadow: 1px 1px 5px black;
+    padding:6px;
+    border-radius: 6px;
+    font-weight: bold;
+    color: white;
+}
+
+.activar-categoria{
+    border: none;
+    background-color: dodgerblue;
+    box-shadow: 1px 1px 5px black;
+    width: 100%;
+    padding:5px 0 ;
+    color: white;
+    font-weight: bold;
+}
+
+
+.no-visible{
+    display: none;
+}
+
+
+
+.projects button{
+    background-color: dodgerblue;
+    border: none;
+}
+
+.work-area{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(150px, 1fr) );
+    grid-template-rows: repeat( auto-fill, minmax(150px, 1fr) );;
+    gap: 10px;
+    padding: 10px;
+    
+}
+
+.tarea{
+    box-shadow: 1px 1px 8px black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    flex-wrap: nowrap;
+}
+
+.tarea *{
+    margin: 3px;
+}
